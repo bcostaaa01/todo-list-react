@@ -14,7 +14,7 @@ const Todo = (props) => {
       // rename button
       <button class="rename"
       onClick={() => {
-        props.(props.id);
+        props.onChange(props.id);
       }}>
         </button>
     </div>
