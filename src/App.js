@@ -23,12 +23,18 @@ class App extends React.Component {
     });
   };
 
+  handleChange = (task) => {
+    this.setState({
+      todoTasks: [...this.state.todoTasks, task]
+    })
+  };
+
   render() {
     return (
       <div className="wrapper">
         <div className="cardFrame">
           <Header numberTodos={this.state.todoTasks.length} />
-          <TodoList tasks={this.state.todoTasks} onDelete={this.handleDelete} />
+          <TodoList tasks={this.state.todoTasks} onDelete={this.handleDelete} onChange={this.handleChange}/>
           <SubmitForm onFormSubmit={this.handleSubmit} />
         </div>
       </div>
