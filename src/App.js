@@ -11,7 +11,15 @@ class App extends React.Component {
   handleDelete = (index) => {
     const newArr = [...this.state.todoTasks];
     newArr.splice(index, 1);
-    this.setState({ todoTasks: newArr });
+    this.setState({
+      todoTasks: newArr
+    });
+  };
+
+  handleSubmit = (task) => {
+    this.setState({
+      todoTasks: [...this.state.todoTasks, task]
+    });
   };
 
   render() {
