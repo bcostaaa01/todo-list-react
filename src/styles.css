@@ -2,3 +2,24 @@
   font-family: sans-serif;
   text-align: center;
 }
+
+body {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+border: 2px;
+border-style: solid;
+border-color: gray;
+background-color: #b7d7e8;
+}
+
+.delete {
+  color: black;
+  background-color: #c94c4c;
+}
+
+.rename {
+  background-color: #ffef96;
+}
