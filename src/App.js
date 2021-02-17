@@ -12,7 +12,7 @@ class App extends React.Component {
       <div className="wrapper">
         <div className="cardFrame">
           <Header numberTodos={this.state.todoTasks.length} />
-          <TodoList tasks={this.state.tasks} />
+          <TodoList tasks={this.state.todoTasks} />
         </div>
       </div>
     );
