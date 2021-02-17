@@ -6,7 +6,7 @@ import SubmitForm from './submitform';
 
 class App extends React.Component {
   state = {
-    todoTasks: ["task 1", "task 2", "task 3"]
+    todoTasks: []
   };
 
   handleDelete = (index) => {
